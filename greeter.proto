@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package greeter;
+
+option go_package = "github.com/ttkgof/microservices-examples/proto/greeter";
+
+service Greeter {
+  rpc Hello(HelloRequest) returns (HelloResponse) {}
+  rpc Goodbye(GoodbyeRequest) returns (GoodbyeResponse) {}
+}
+
+message HelloRequest {
+  string name = 1;
+}
+
+message HelloResponse {
+  string reply = 1;
+}
+
+message GoodbyeRequest {
+  string name = 1;
+}
+
+message GoodbyeResponse {
+  string reply = 1;
+}

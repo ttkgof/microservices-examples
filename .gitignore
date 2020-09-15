@@ -1,0 +1,8 @@
+.DS_Store
+.idea
+.vscode
+*.exe
+grpc/client/client
+grpc/service/service
+go-kit/client/client
+go-kit/service/service
